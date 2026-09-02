@@ -112,3 +112,13 @@ html {
   font-size: 1.5rem;
   font-weight: 700;
 }
+@media (max-width: 640px) {
+  .marquee-group {
+    gap: 24px;
+    padding: 4px 20px;
+  }
+
+  .city-link {
+    font-size: 0.9rem;
+  }
+}

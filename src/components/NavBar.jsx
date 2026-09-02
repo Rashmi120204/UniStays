@@ -56,30 +56,31 @@ function Navbar() {
       {/* Mobile Menu */}
 
     <div
-    className={`mx-5 overflow-hidden rounded-[10px] bg-[#073d2b] shadow-lg transition-all duration-300 ease-out md:hidden ${
-    menuOpen
-      ? "max-h-[220px] translate-y-0 opacity-100"
-      : "pointer-events-none max-h-0 -translate-y-2 opacity-0"
-  }`}>
-  <div className="flex flex-col gap-4 p-5 text-[1rem] font-semibold">
-    <a
-      href="#about"
-      onClick={() => setMenuOpen(false)}
-      className="transition-opacity duration-200 hover:opacity-70">
-      About us
+    className={`mx-[14px] overflow-hidden rounded-[12px] bg-[#073d2b] shadow-lg transition-all duration-300 ease-out md:hidden ${
+        menuOpen
+        ? "max-h-[260px] translate-y-0 opacity-100"
+        : "pointer-events-none max-h-0 -translate-y-2 opacity-0"
+    }`}>
+
+    <div className="flex flex-col p-[24px]">
+        <a
+    href="#about"
+    onClick={() => setMenuOpen(false)}
+    className="ml-[16px] py-[12px] text-[1rem] font-semibold transition-opacity duration-200 hover:opacity-70">
+    About us
     </a>
 
     <a
-      href="#contact"
-      onClick={() => setMenuOpen(false)}
-      className="transition-opacity duration-200 hover:opacity-70">
-      Contact
+    href="#contact"
+    onClick={() => setMenuOpen(false)}
+    className="ml-[16px] py-[12px] text-[1rem] font-semibold transition-opacity duration-200 hover:opacity-70">
+    Contact
     </a>
 
     <a
       href="https://wa.me/"
       onClick={() => setMenuOpen(false)}
-      className="w-fit rounded-full bg-white px-4 py-[10px] text-black transition-transform duration-200 hover:scale-105">
+      className="mt-[8px] w-fit rounded-full bg-white px-[20px] py-[11px] text-[1rem] font-semibold text-black transition-transform duration-200 hover:scale-105">
       WhatsApp
     </a>
 

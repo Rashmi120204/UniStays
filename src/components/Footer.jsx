@@ -1,11 +1,11 @@
 function Footer() {
   return (
     <footer className="bg-[#073d2b] text-white">
-      <div className="mx-auto flex w-[min(1140px,calc(100%-40px))] items-center justify-between border-t border-white/10 py-[24px]">
+      <div className="mx-auto flex w-[min(1140px,calc(100%-40px))] flex-col gap-5 py-[24px] sm:flex-row sm:items-center sm:justify-between">
 
   {/* Contact Links - Left */}
 
-  <div className="flex items-center gap-[18px] text-[.9rem]">
+  <div className="flex flex-wrap items-center gap-[14px] text-[.9rem] opacity-75">
 
     <a
       href="mailto:hello@uniworldstays.com"
@@ -37,10 +37,9 @@ function Footer() {
 
   {/* Copyright - Right */}
 
-  <p className="text-[.85rem] opacity-75">
-    © 2026 Uniworld Stays. All rights reserved.
-  </p>
-
+  <p className="text-[.85rem] opacity-75 sm:order-last">
+  © 2026 Uniworld Stays. All rights reserved.
+</p>
 </div>
 
     </footer>
